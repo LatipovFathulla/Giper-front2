@@ -7,7 +7,7 @@ const Brands = () => {
   const [ brands, setBrands ] = useState([]);
 
   const fetchBrands = async () => {
-    const response = await fetch("http://185.117.119.56:82/outside/brand/");
+    const response = await fetch("https://api.gipermart.uz/outside/brand/");
     const brands = await response.json();
     if(brands.count === 0) return;
     setBrands(brands.results);

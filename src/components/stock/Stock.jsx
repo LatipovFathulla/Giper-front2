@@ -12,7 +12,7 @@ const Stock = () => {
   const [ loading, setLoading ] = useState(true);
 
   const fetchStockProducts = async () => {
-    const response = await fetch("http://185.117.119.56:82/dashboard/stocks/");
+    const response = await fetch("https://api.gipermart.uz/dashboard/stocks/");
     const products = await response.json();
     if(products.count === 0) return;
     setStockProducts(products.results);

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getCookie, setCookie } from "../helper";
 
-export const API_URL = "http://185.117.119.56:82/";
+export const API_URL = "https://api.gipermart.uz/";
 
 const $host = axios.create({
     baseURL: API_URL
